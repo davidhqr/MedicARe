@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MedicARe</string>
+
+    <string name="back_button">BACK</string>
+    <string name="scan_buton">SCAN</string>
+
+    <string name="history_title">Medicine History</string>
+    <string name="scan_title">Scan Medicine</string>
+    <string name="status_title">24 Hour Overview</string>
+
+    <string name="label_title_tylenol">Tylenol</string>
+    <string name="label_description_tylenol">Pain relief medicine for fever, colds, headaches, and join pain</string>
+
+    <string name="label_title_advil">Advil</string>
+    <string name="label_description_advil">Relieve pain from headache, dental pain, menstrual cramps, muscle aches, or arthritis. Reduce fever and to relieve minor aches and pain due to the common cold or flu</string>
+
+    <string name="label_title_benadryl">Benadryl</string>
+    <string name="label_description_benadryl">Relieve symptoms of allergy, hay fever, and common cold</string>
+
+    <string name="label_title_aspirin">Aspirin</string>
+    <string name="label_description_aspirin">Reduce fever and relieve mild to moderate pain from muscle aches, toothaches, common cold, and headaches</string>
+
+    <string name="label_title_tums">Tums</string>
+    <string name="label_description_tums">Treat heartburn, upset stomach, or indigestion</string>
+
+    <string name="label_dosage">Pills taken in last 24 hours: <b>%1$d/%2$d</b></string>
+    <string name="label_take_pill_button">TAKE PILL</string>
+
+</resources>

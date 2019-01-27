@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/status_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="@string/status_title"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/med1_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/med1_progress"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                app:cpb_background_progressbar_color="#CDDFFF"
+                app:cpb_background_progressbar_width="5dp"
+                app:cpb_progress="25"
+                app:cpb_progress_max="100"
+                app:cpb_progressbar_color="#3682F4"
+                app:cpb_progressbar_width="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/med1_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/med1_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Tylenol"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/med1_progress_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/med1_name"
+                    android:layout_centerHorizontal="true"
+                    android:text="25%"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/med2_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp">
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/med2_progress"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                app:cpb_background_progressbar_color="#CDDFFF"
+                app:cpb_background_progressbar_width="5dp"
+                app:cpb_progress="30"
+                app:cpb_progress_max="100"
+                app:cpb_progressbar_color="#3682F4"
+                app:cpb_progressbar_width="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/med2_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/med2_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Advil"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/med2_progress_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/med2_name"
+                    android:layout_centerHorizontal="true"
+                    android:text="30%"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/med3_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/med1_layout">
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/med3_progress"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                app:cpb_background_progressbar_color="#CDDFFF"
+                app:cpb_background_progressbar_width="5dp"
+                app:cpb_progress="20"
+                app:cpb_progress_max="100"
+                app:cpb_progressbar_color="#3682F4"
+                app:cpb_progressbar_width="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/med3_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/med3_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Benadryl"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/med3_progress_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/med3_name"
+                    android:layout_centerHorizontal="true"
+                    android:text="20%"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/med4_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp">
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/med4_progress"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                app:cpb_background_progressbar_color="#CDDFFF"
+                app:cpb_background_progressbar_width="5dp"
+                app:cpb_progress="10"
+                app:cpb_progress_max="100"
+                app:cpb_progressbar_color="#3682F4"
+                app:cpb_progressbar_width="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/med4_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/med4_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Tums"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/med4_progress_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/med4_name"
+                    android:layout_centerHorizontal="true"
+                    android:text="10%"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/med5_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/med3_layout">
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/med5_progress"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                app:cpb_background_progressbar_color="#CDDFFF"
+                app:cpb_background_progressbar_width="5dp"
+                app:cpb_progress="50"
+                app:cpb_progress_max="100"
+                app:cpb_progressbar_color="#3682F4"
+                app:cpb_progressbar_width="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/med5_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/med5_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Aspirin"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/med5_progress_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/med5_name"
+                    android:layout_centerHorizontal="true"
+                    android:text="50%"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/main_ar_fragment"
+        android:name="com.google.ar.sceneform.ux.ArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:textSize="22sp"
+        android:textColor="@android:color/white"
+        android:text="@string/scan_title" />
+
+    <ImageView
+        android:id="@+id/main_crosshair"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/crosshair" />
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/main_progress"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        app:cpb_background_progressbar_color="@color/colorPrimary"
+        app:cpb_background_progressbar_width="3dp"
+        app:cpb_indeterminate_mode="true"
+        app:cpb_progressbar_color="@color/colorAccent"
+        app:cpb_progressbar_width="5dp" />
+
+    <Button
+        android:id="@+id/main_button"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_rounded_scan"
+        android:text="SCAN"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+</FrameLayout>

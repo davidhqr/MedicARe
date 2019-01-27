@@ -212,7 +212,7 @@ public class ArFragment extends Fragment implements View.OnClickListener {
         GoogleRequest googleRequest = new GoogleRequest(imageRequests);
 
         try {
-            GoogleResponse googleResponse = googleService.getResponse("AIzaSyABb8C6veM8c9cU3ad3Xrm6JurRKAZL19s", googleRequest).execute().body();
+            GoogleResponse googleResponse = googleService.getResponse("", googleRequest).execute().body();
             if (googleResponse == null) {
                 Toast.makeText(mainActivity, "No medicine found", Toast.LENGTH_SHORT).show();
                 resetView();
